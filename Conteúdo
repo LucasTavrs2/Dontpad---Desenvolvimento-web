@@ -1,0 +1,376 @@
+ 	Desenvolvimento web
+
+HTML:
+
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6> 
+H= Header, cabeçalho
+
+<p>=paragrafo
+
+<hr>=Horizontal rule, linha horizontal
+
+<br>= Break, quebra de linha
+<div>= Division
+<input>
+<input type=password, text>
+placeholder= conteudo fixo dentro do input
+submit=enviar
+value= conteudo dentro do botão de enviar
+<radio>=botão de selecionar
+<checkbox>
+<button>
+<select>
+<option>
+<textarea>=area de texto
+<align>= alinhar
+center
+[ ] = atritubo
+
+<style>=usar css dentro do html
+border= Xpx shape color
+
+non-breaking space =   
+
+<div>= dividir sessões pra baixo
+<span>=dividir sessões pro lado
+
+width
+
+<form>=formulário
+<fieldset>=agrupar dados semelhantes
+<legend>=legenda
+<label>=etiqueta/rótulo
+cellpadding=espaço entre a borda de uma célula da tabela e seu conteúdo
+
+<a>= anchor, link
+
+<table>=tabela
+<tr>=table row, linha da tabela
+<td>=table data, dados da tabela
+<th>=table header, cabeçalho da tabela
+
+colspan=extensão da coluna, pro lado
+rowspan=extensão da linha, pra baixo
+
+a href="http://www.google.com", exemplo pra link de site externo 
+
+<ul>= Lista desordenada, sem ordem(Circle, square, disc)
+<li>= Lista dos itens
+<ol>= Lista ordenada, com ordem, numerada(Número, letra, algarismo romano)
+<!-- teste --> colocar comentario sem q apareça 
+
+classe
+ h1.teste= <h1 class="teste"></h1>
+id
+h1#teste= <h1 id="teste"></h1>
+
+<b>=Bold, negrito
+<strong>=Negrito, Mais correto para uso
+<i>=itálico
+<em>=itálico, Mais correto para uso
+<u>=Underline
+<strike>= Traço de errado
+placeholder= O atributo placeholder é uma pequena frase ou palavra, que tem o intuito de ajudar usuários a entender como devem preencher determinado formulário, inserindo um texto contextual no campo a ser respondido(texto dentro do espaço do input)
+
+HTML5:
+
+<header> = Tag de cabeçalho
+<nav> = tag de navegação
+<footer> = tag de rodapé
+<article> = tag para postagens
+<section> = tag de seção´
+<time> = tag para definição de tempo, dia, hora, etc
+<aside> = tag para área lateral 
+<input> type= email, number, search, range, date, color
+<input required="required"> = para só validar se preencher o campo
+<input autofocus> = seleciona esse campo
+<input step= "5"> = serve pra selecionar de 5 em 5, por exemplo, vai selecionando somente números dentro dessa progressão aritmética
+
+compatibilidade html 5
+
+<script src="html5shiv.js"></script>
+
+internet explorer:
+<!--[if lt IE 9]>
+	<script src="html5shiv.js"></script>
+<![endif]-->
+
+
+CSS:
+Control+espaço= tags de CSS
+background-color
+background-image: url(' ');
+background-repeat, no-repeat, repeat-x, repeat-y
+background-attachment= fixed, scroll
+background-position, center center (mesma ideia do x,y)
+background-size=(tamanho do fundo), cover
+background: linear-gradient( to bottom, color1, color2)=degrade
+background-repeat
+
+color
+font-size
+font-size pode ser, px, %, em(tamanho relativo ao cointeiner pai)
+font-family= "Trebuchet MS", Helvética, Sans-Serif, monospace, (tipo do texto)
+font-weight= o quão negrito ou claro é a sua fonte(normal, bold(de 100 a 900) )
+font-style
+text-decoration= underline, overline, line-through, none
+text-ident=identar
+line-height= altura do conteudo dentro de outro conteudo
+/* teste */  colocar comentario sem q apareça
+. antes da classe
+# antes da id (recomendado usar uma unica vez, pra estrutura toda, se precisar usar mais componentes pra estrutura, utilizar classe)
+body
+display
+float= left, right
+clear= left, right, both, none
+display= block, inline, inline-block
+position= static, relative(top, right, bottom, left), absolute, fixed
+z-index=Sobrepor um conteudo ao outro, colocar valor aos conteúdos, o de número maior se sobrepõe ao outro
+a:link{}=Links não visitados
+a:visited{}=Links visitados
+a:hover{}=Quando passa o mouse sobre o link
+a:active{}=Quando vc clica no link
+*{}= seletor universal
+li>a = 
+list-style-type: none
+border-collapse: separate or collapse, (borda da tabela junta ou separada)
+text-transform = uppercase (Deixar todas as letras maiúsculas)
+letter-spacing= espaço entre as letras, exemplo 0.1em
+cursor=pointer(seta vira uma mão), text
+border-radius=borda arredondada
+RGBA= Red, Green, Blue, Alfa, de 0 a 255, e A(opacidade Alfa) valor decimal, exemplo 0.3
+:focus=outline-style: none
+ outline-style
+outline-width
+outline-color
+valign= alinhar verticalmente
+text-align: center, justify
+opacity(opacidade)= de 0 a 1 
+@font-face{ font-family:" " ;  src: url("link") }=colocar link de fontes customizadas
+box-sizing: border-box;
+linear-gradient(to (right, left, top, bottom),  color 1, color 2) degrade entre 2 cores
+radial-gradient     "            "                 "                "                  "                  "             " 
+text-shadow: px px color; (sombra no texto)
+box-shadow (sombra na caixa)
+
+@keyframes nameofanimation{
+	from{}
+	to{}
+}
+
+animation
+animation-name
+animation-duration = xs
+animation-delay
+animation-iteration-count = quantas vezes repetir a animação
+animation-direction: alternate; reverse
+transition
+
+:root=O seletor de :root representa o elemento <html> na página HTML, para esse tipo de tarefa, uma melhor prática é definir um conjunto de variáveis CSS globais no elemento :root,
+aqui, você define três variáveis de cor anexadas à raiz da página.
+
+
+0 - IDs
+0 - Classes, attributes and pseudo-classes
+0 - Elements and pseudo elements
+
+height: altura
+max-height
+min-height
+width: largura
+max-width
+min-width
+
+-webkit- (suporte para o chrome)
+-moz-(suporte para o mozila)
+-o-(suporte para opera)
+
+
+Box model:
+Conteudo
+Padding
+Border= dotted
+Margin 
+top, right, bottom, left, auto(centralizar)
+
+Dois seletores iguais, o ultimo é aplicado, especificidade, pra alterar isso, colocar   !important.
+A regra mais especifica será aplicada
+
+
+
+
+JAVA:
+
+< src="xxx.js"></>
+
+
+- O elemento de  pode ser colocado no <head> ou em outro lugar no <body>,
+no entanto, colocar <> no final da seção <body> permite que todo o
+conteúdo da página seja exibido na tela primeiro, carregando o  em seguida.
+
+
+<no>=pode ser usado para mostrar uma mensagem, caso o Java seja desativado.
+
+'use strit'=Às vezes, o Java faz suposições sobre o tipo de dados que você insere. Atribuição, matemática ou igualdade lógica podem gerar resultados inesperados,
+o Java tenta ser amigável e ele tenta fazer com que o código funcione e forneça uma solução, mesmo que o resultado venha a ser um erro,
+para combater essas deficiências, você pode ativar o modo ESTRITO, que reduz erros silenciosos, melhora o desempenho, fornece mais avisos e menos recursos não seguros.
+
+
+alert(" ")=cria um alerta na página
+
+
+*Variáveis começam com letra minúscula. ex: var greenDuck;
+*Objetos e classes começam com letra maiúscula. ex: var date = Date();
+*Constantes são sempre em letras maiúsculas. ex: const = CONSTANTLYUPPERCASE;
+
+Comentários:
+// (se for usar em só uma linha)
+/*  */ (se for usar em mais de uma linha) 
+
+Tipos de dados:
+- Number (Var number; Var integer; var negNumber; var negInteger
+- String (letras e símbolos) (Var string = " "; Var mixedQuote = ' '; Var escQuote = " ";)
+- Boolean (par binário, verdadeiro/falso, true/false)
+- Null (deixar sem valor intencionalmente)
+- Undefined (não atribuir um valor)
+- Symbol
+
+Operadores derivados:
+
+var a = 5;
+a = a + 4; // Versão longa
+a += 4; // Versão curta
+
+Versão curta de cada operador = +=; -=; *=; /=; 
+
+Operador unário:
+
+Var a = 5;
+a = a + 1; //Versão longa
+a++; // Versão curta
+
+a = a -1;
+a--;
+
+Condicional IF:
+
+if ( alguma condição) {
+	Faça algo.         /* Quando a condição é verdadeira */
+}
+else{
+	Faça outra coisa.     /*Quando a condição é falsa */ 
+}
+
+Igualdade: ==
+
+if( a==b){
+	Faça algo.
+}
+else{
+	Faça outra coisa.
+}
+
+
+Igualdade estrita === (se contem o mesmo valor exato)
+
+Menor/ maior que:
+<   or   >
+Menor ou igual/ maior ou igual que:
+<=  or  >=
+
+Negação(NOT):
+!
+se 'a' não é igual a 'b'
+if (a != b){
+	Faça algo.
+}
+else{
+	Faça outra coisa.
+}
+...............................................................................................
+
+se 'a' não é idêntico a 'b' 
+if (a !== b){
+	Faça algo.
+}
+else{
+	Faça outra coisa.
+}
+...............................................................................................
+
+if( a == true) {}    /* versão longa*/
+if ( a ) {}              /* abreviação*/
+
+if( a == false) {}  /*versão longa*/
+if ( a != true) {}   /*psicologia reversa*/
+if( !a ) {}             /*abreviação*/
+
+
+AND = &&
+
+if( a==b && c==d) {  }
+
+OR = | |  (um, ou outro, ou ambos)
+
+if( a==b | | c==d) {  }
+
+XOR (um ou outro pode, mas ambos não)
+
+if (( a==b | | c==d)  && ((a==b) != (c==d))) {  }
+
+Operador ternário
+a==b ?(faça) console.log("match") :(else) console.log("no match") ;
+a==b ? console.log("match") : console.log("no match")
+
+
+array(vetor e matriz):
+var canetas;
+canetas = ["vermelha", "azul", "verde", "laranja"]
+
+var variosElementos = ["chaves", 5, false, 568, "mais uma coisa"]; 
+
+
+
+.length
+.reverse
+.shift
+.unshift
+.pop = remove o último elemento de um array e retorna aquele valor.
+.push = adiciona valores a um array.
+.splice = altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+.slice =  retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original.
+.indexOf = retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+.join = junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string.
+
+
+
+
+...................................................................................................................................................................................................
+
+var factor = 7; // ---------------------------> Escopo global, variável declarada para todo o código
+
+function multiply(){
+var num = 6                         //------------v
+var result = factor * num;   //-------------> Escopo local, variável declarada somente dentro da função	
+return result;                       //-------------^
+}
+var getResult = multiply();
+
+.....................................................................................................................................................................................................
+
+const = uma vez definida, não pode ser alterada
+let = variável de escopo de bloco, possui escopo menor do que var
+
+
+Estruturas de repetição:
+-For
+-While
+-Do While
+
+-Break
+-Continue
